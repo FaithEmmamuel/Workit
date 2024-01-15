@@ -1,0 +1,32 @@
+:root{
+  --primary-color: #24053E;
+  --secondary-color: #44FFA1;
+  --Davys-Grey: #584D62;
+  --Ghost-white: #FCF8FF;
+  --white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  color: #333;
+  line-height: 1.6;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  height: 87px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px ;
+}
+
+.nav p{
+  color: var(--white);
+}
