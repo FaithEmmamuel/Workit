@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Manrope:wght@400;700&display=swap');
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Manrope', sans-serif;*/
+
 :root{
   --primary-color: #24053E;
   --secondary-color: #44FFA1;
@@ -5,6 +10,8 @@
   --Ghost-white: #FCF8FF;
   --white: #FFFFFF;
 }
+
+/* utilities */
 
 * {
   box-sizing: border-box;
@@ -19,14 +26,91 @@ body{
 
 .navbar {
   background-color: var(--primary-color);
-  height: 87px;
+  height: 100px;
 }
-.container {
+.flex {
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px ;
+  padding: 30px 10em;
 }
 
-.nav p{
+.nav-gate a{
   color: var(--white);
+  border-bottom: 3px solid var(--secondary-color);
+  padding: 5px;
+  font-size: 18px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+}
+
+.logo, a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-gate a:hover {
+  color: var(--secondary-color);
+}
+
+/* main */
+.ovally__one {
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+.ovally__two {
+  position: relative;
+  right: 110px;
+  top: 44px;
+}
+.ovally__three {
+  position: relative;
+  right: 217px;
+  top: 66px;
+}
+.ovally__four {
+  position: relative;
+  right: 330px;
+  top: 90px;
+}
+
+.heading {
+  background-color: var(--primary-color);
+  height: 500px;
+  color: var(--white);
+}
+
+.heading h1 {
+  line-height: 80px;
+  font-family: 'Fraunces', serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  max-width: 33pc;
+  letter-spacing: -0.18px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.heading .button {
+  text-align: center;
+  width: 161px;
+  height: 61px;
+  flex-shrink: 0;
+  padding: 10px;
+  margin: auto;
+
+  line-height: 80px;
+  font-family: 'Manrope', serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; 
+  letter-spacing: -0.18px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border: none;
 }
