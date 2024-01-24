@@ -22,12 +22,18 @@ font-family: 'Manrope', sans-serif;*/
 body{
   color: #333;
   line-height: 1.6;
-  overflow-x: hidden;
+  min-height: 0;
+  min-width: none;
+}
+
+.work-it {
+  overflow: hidden;
 }
 
 .navbar {
   background-color: var(--primary-color);
-  height: 100px;
+  width: 100%;
+  height: 6.25rem;
 }
 .flex {
   display: flex;
@@ -80,9 +86,9 @@ body{
 
 .heading {
   background-color: var(--primary-color);
-  height: 500px;
+  width: 100%;
   color: var(--white);
-  overflow: hidden;
+  min-height: 75vh;
 }
 
 .heading__sub h1 {
@@ -123,11 +129,49 @@ body{
 }
 
 .spiral__tag {
-  position: relative;
-  bottom: 150px;
-  left: 115em;
-  width: 141.703px;
-  height: 112.712px;
+  position: sticky;
+  bottom: 25em;
+  left: 190em;
+  width: 56px;
+  height: 112px;
   transform: rotate(-260deg);
   flex-shrink: 0;
+}
+
+.phonery {
+  position: relative;
+}
+
+.phone, 
+.shade {
+  width: 715px;
+  height: 427px;
+}
+.phone-2 {
+  width: 702px;
+  height: 405px;
+}
+.recta {
+  width: 91.63px;
+  height: 52.42px;
+}
+.recta-2 {
+  width: 91.63px;
+  height: 52.42px;
+}
+.bgw {
+  width: 449.44px;
+  height: 259px;
+}
+.bgw-2 {
+  width: 266.93px;
+  height: 153.35px;
+}
+.circle {
+  width: 68.182px;
+  height: 43px;
+}
+.zigzag {
+  width: 348.054px;
+  height: 77.499px;
 }
