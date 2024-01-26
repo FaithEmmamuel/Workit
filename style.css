@@ -22,12 +22,20 @@ font-family: 'Manrope', sans-serif;*/
 body{
   color: #333;
   line-height: 1.6;
+  min-height: 0;
+  min-width: none;
+}
+
+.work-it {
+  overflow: hidden;
 }
 
 .navbar {
   background-color: var(--primary-color);
-  height: 100px;
+  width: 100%;
+  height: 6.25rem;
 }
+
 .flex {
   display: flex;
   justify-content: space-between;
@@ -55,6 +63,7 @@ body{
 }
 
 /* main */
+
 .ovally__one {
   position: relative;
   right: 40px;
@@ -76,13 +85,7 @@ body{
   top: 90px;
 }
 
-.heading {
-  background-color: var(--primary-color);
-  height: 500px;
-  color: var(--white);
-}
-
-.heading h1 {
+.heading__sub h1 {
   line-height: 80px;
   font-family: 'Fraunces', serif;
   font-size: 80px;
@@ -93,24 +96,65 @@ body{
   letter-spacing: -0.18px;
   margin: auto;
   margin-bottom: 50px;
+  margin-top: -2em;
+  color: var(--white);
+  font-feature-settings: 'clig' off, 'liga' off;
 }
 
-.heading .button {
-  text-align: center;
-  width: 161px;
-  height: 61px;
-  flex-shrink: 0;
-  padding: 10px;
-  margin: auto;
+.main .button {
+  position: absolute;
+  top: 50%;
+  left: 45%;
 
-  line-height: 80px;
-  font-family: 'Manrope', serif;
+  line-height: 32px;
+  font-family: 'Manrope', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 32px; 
+  max-width: 33pc;
   letter-spacing: -0.18px;
+  margin-top: 3em;
   color: var(--primary-color);
   background-color: var(--secondary-color);
   border: none;
+  outline: none;
+  
+  padding: 0.5em;
+}
+
+.spiral__tag {
+  position: sticky;
+  bottom: 25em;
+  left: 190em;
+  width: 56px;
+  height: 112px;
+  transform: rotate(-260deg);
+  flex-shrink: 0;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.main, .container {
+  position: relative;
+  z-index: 1;
+  margin: auto;
+}
+
+.main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 0 0 50% 50%/ 0 0 100% 100%;
+  transform: scaleX(2.2);
 }
