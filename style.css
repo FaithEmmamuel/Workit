@@ -158,3 +158,8 @@ body{
   border-radius: 0 0 50% 50%/ 0 0 100% 100%;
   transform: scaleX(2.2);
 }
+
+.main__img {
+  position: absolute;
+  right: 35rem;
+}
