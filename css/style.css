@@ -24,6 +24,7 @@ body{
   line-height: 1.6;
   min-height: 0;
   min-width: none;
+  background-color: var(--Ghost-white);
 }
 
 .work-it {
@@ -89,8 +90,13 @@ body{
   top: 90px;
 }
 
+.heading__sub {
+  margin-top: 4em;
+  margin: auto;
+}
+
 .heading__sub h1 {
-  line-height: 80px;
+  line-height: 100px;
   font-family: 'Fraunces', serif;
   font-size: 80px;
   font-style: normal;
@@ -105,44 +111,40 @@ body{
   font-feature-settings: 'clig' off, 'liga' off;
 }
 
-.main .button {
-  position: absolute;
-  top: 50%;
-  left: 45%;
+.button {
+  display: block;
+  margin: auto;
 
   line-height: 32px;
   font-family: 'Manrope', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  max-width: 33pc;
   letter-spacing: -0.18px;
-  margin-top: 3em;
+  margin-top: 0.89em;
+  width: 7.6em;
+  height: 2.9em;
   color: var(--primary-color);
   background-color: var(--secondary-color);
   border: none;
   outline: none;
-  
   padding: 0.5em;
 }
 
 .spiral__tag {
-  position: sticky;
-  bottom: 25em;
-  left: 190em;
+  position: absolute;
+  right: -55px;
+  top: 250px;
   width: 56px;
   height: 112px;
   transform: rotate(-260deg);
-  flex-shrink: 0;
+  flex-shrink: 1;
 }
 
 .main {
   position: relative;
   width: 100%;
-  height: 80vh;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  height: 45.689em;
 }
 
 .main, .container {
@@ -164,6 +166,47 @@ body{
 }
 
 .main__img {
-  position: absolute;
-  right: 35rem;
+  width: 767px;
+  height: 441px;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 90px;
 }
+
+/* word__head */
+
+.word__head {
+  width: 100%;
+  height: 45.689em;
+  background-color: var(--Ghost-white);
+  margin: 0;
+}
+
+.sub-word__head {
+
+  width: 100%;
+  margin: auto;
+}
+
+.mid-word__head {
+  display: flex;
+  gap: 30px;
+  text-align: center;
+
+  counter-reset: count;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.mid-word__head li {
+  counter-increment: count;
+} 
+
+/* .mid-word__head div {
+  display: grid;
+  align-items: center;
+  position: relative;
+  column-gap: var(--size-400);
+  grid-template-columns: min-content 1fr 1fr;
+} */
