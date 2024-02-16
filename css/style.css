@@ -347,12 +347,16 @@ body{
 }
 
 .last-slide .socials__icon {
+  display: flex;
+  justify-items: center; 
+  align-items: center;
   width: 116px;
   height: 102.22px;
-  position: absolute;
+  /* position: absolute;
   bottom: 2px;
   left: 661px;
-  top: 900px;
+  top: 900px; */
+  margin-inline: auto;
 }
 
 .last-slide::before {
