@@ -47,6 +47,7 @@ body{
 .nav-gate a{
   color: var(--white);
   border-bottom: 3px solid var(--secondary-color);
+  background-color: var(--primary-color);
   padding: 5px;
   font-size: 18px;
   font-family: 'Manrope', sans-serif;
@@ -55,13 +56,27 @@ body{
   letter-spacing: -0.18px;
 }
 
+.nav-gate a:hover {
+  color: var(--secondary-color);
+}
+
 .logo, .button, a {
   text-decoration: none;
   cursor: pointer;
 }
 
-.nav-gate a:hover {
+.button:hover {
+  background-color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
   color: var(--secondary-color);
+  font-weight: 400;
+}
+
+.button__last:hover {
+  background-color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  font-weight: 400;
 }
 
 .tail {
@@ -263,16 +278,16 @@ body{
 
 .last-slide__cont {
   position: relative;
-  width: 1112px;
-  height: 647.74px;
-  top: 200px;
-  bottom: 0px;
+  width: 69.5em;
+  height: 40.48375em;
+  top: 12.5em;
+  bottom: 0em;
   margin-inline: auto;
 }
 
 .last-slide__img {
   background-color: var(--secondary-color);
-  width: 400px;
+  width: 25em;
   clip-path: circle();
   padding-top: 6em;
   padding-left: 7em;
@@ -280,11 +295,11 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 250px;
+  bottom: 15.625em;
   position: absolute;
   bottom: 0;
-  right: 650px;
-  top: -170px;
+  right: 40.625em;
+  top: -10.625em;
 } 
 
 .last-slide__img .img__gg {
@@ -303,6 +318,8 @@ body{
   top: 180px;
   right: 0px;
   bottom: 0;
+  line-height: 32px;
+  letter-spacing: -0.18px;
 }
 
 .last-slide__text p {
@@ -333,17 +350,12 @@ body{
   background-color: var(--secondary-color);
   color: var(--primary-color);
   outline: none;
+  border: none;
   width: 190px;
   height: 61px;
   top: 288px;
   left: 64px;
   cursor: pointer;
-}
-
-.button__last a :hover {
-  cursor: pointer;
-  background-color: transparent;
-  color: var(--secondary-color);
 }
 
 .spiral-photo__tag {
@@ -364,9 +376,10 @@ body{
   left: 661px;
   top: 900px; */
   margin-inline: auto;
+  cursor: pointer;
 }
 
-.last-slide::before {
+/* .last-slide::before {
   content: '';
   position: absolute;
   right: 0;
@@ -377,15 +390,6 @@ body{
   border-top-right-radius: 0 0 50% 50%/ 0 0 50% 50%;
   transform: scaleX(2.2);
   box-shadow: 3px 4px 4px -8px gray;
-}
-/* .last-slide::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 0 0 50% 50%/ 0 0 100% 100%;
-  transform: scaleX(2.2);
-  box-shadow: 3px 4px 4px -8px gray;
 } */
+
+/* Tablet responsiveness */
