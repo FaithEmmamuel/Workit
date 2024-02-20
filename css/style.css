@@ -393,3 +393,9 @@ body{
 } */
 
 /* Tablet responsiveness */
+
+@media (max-width: 768px) {
+  body {
+    background-color: red;
+  }
+}
