@@ -395,7 +395,68 @@ body{
 /* Tablet responsiveness */
 
 @media (max-width: 768px) {
-  body {
-    background-color: red;
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    width: 689px;
+    height: 50px;
+    align-items: center;
+    margin-inline: auto;
+    background-color: var(--primary-color);
+    padding: 0;
+  }
+
+  .ovally {
+    position: relative;
+    right: 50px;
+    top: 0;
+  }
+  
+  .ovally__one {
+    position: relative;
+    right: 100px;
+    top: 0px;
+  }
+  .ovally__two {
+    position: relative;
+    right: 188px;
+    top: 44px;
+  }
+  .ovally__three {
+    position: relative;
+    right: 304px;
+    top: 66px;
+  }
+  .ovally__four {
+    position: relative;
+    right: 423px;
+    top: 90px;
+  }
+
+  .spiral__tag {
+    position: absolute;
+    right: -95px;
+    top: 250px;
+    width: 56px;
+    height: 112px;
+    transform: rotate(-260deg);
+    flex-shrink: 1;
+  }
+
+  .heading__sub h1 {
+    line-height: 100px;
+    font-family: 'Fraunces', serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    max-width: 33pc;
+    letter-spacing: -0.18px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: -2em;
+    color: var(--white);
+    border: 2px red solid;
+    font-feature-settings: 'clig' off, 'liga' off;
   }
 }
