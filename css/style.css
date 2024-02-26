@@ -395,6 +395,13 @@ body{
 /* Tablet responsiveness */
 
 @media (max-width: 768px) {
+  
+  .main {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 33.766rem;
+  }
+
   .flex {
     display: flex;
     justify-content: space-between;
@@ -458,5 +465,14 @@ body{
     color: var(--white);
     border: 2px red solid;
     font-feature-settings: 'clig' off, 'liga' off;
+  }
+  
+  .main__img {
+    width: 514px;
+    height: 296px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 90px;
   }
 }
