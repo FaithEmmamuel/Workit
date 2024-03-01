@@ -395,22 +395,14 @@ body{
 /* Tablet responsiveness */
 
 @media (max-width: 768px) {
-  
-  .main {
-    background-color: var(--primary-color);
-    width: 100%;
-    height: 33.766rem;
-  }
-
   .flex {
     display: flex;
     justify-content: space-between;
-    width: 689px;
     height: 50px;
     align-items: center;
+    padding: 39.5px;
     margin-inline: auto;
     background-color: var(--primary-color);
-    padding: 0;
   }
 
   .ovally {
@@ -474,5 +466,29 @@ body{
     margin: auto;
     position: relative;
     top: 90px;
+  }
+
+  .main {
+    position: relative;
+    width: 100%;
+    height: 40.689em;
+  }
+  
+  .main, .container {
+    position: relative;
+    z-index: 1;
+    margin: auto;
+  }
+
+  .main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 0 0 50% 50%/ 0 0 27% 27%;
+    transform: scaleX(2.2);
   }
 }
