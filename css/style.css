@@ -225,7 +225,7 @@ body{
   width: fit-content;
   margin: auto;
   padding: 2em;
-  display: flex;
+  display: grid;
   justify-items: center;
   align-items: center;
 }
@@ -455,7 +455,6 @@ body{
     margin-bottom: 50px;
     margin-top: -2em;
     color: var(--white);
-    border: 2px red solid;
     font-feature-settings: 'clig' off, 'liga' off;
   }
   
@@ -490,5 +489,14 @@ body{
     background-color: var(--primary-color);
     border-radius: 0 0 50% 50%/ 0 0 27% 27%;
     transform: scaleX(2.2);
+  }
+
+  /* Word__head */
+  .word__head {
+    display: flex;
+  }
+
+  .sub-word__head .card {
+    flex: row;
   }
 }
